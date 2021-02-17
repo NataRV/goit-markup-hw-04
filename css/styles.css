@@ -479,3 +479,25 @@ background-color: #2196f3;
 background-image: url(../images/main/box3.jpg);
 background-repeat: repeat;
 }
+
+
+/*button*/
+.button{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.button > .icon{
+  display: inline-flex;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  /*background-color: red;*/
+  outline: 1px solid black;
+  background-image: url(../images/main/box2.jpg);
+  background-size: contain;
+}
