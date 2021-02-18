@@ -230,8 +230,6 @@ justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
-  outline: 6px solid rgb(241, 12, 173);
 }
 /* ========== END HERO ========== */
 
@@ -244,6 +242,7 @@ justify-content: center;
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .feature-text {
   font-size: 14px;
@@ -264,6 +263,29 @@ justify-content: center;
   .list > .list-item{
     min-width: 270px;
 }
+.list-item::before{
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: var(--light-grey-bg-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-antenna::before{
+ background-image: url(); 
+}
+
+.icon-clock::before{
+  background-image: url();
+}
+.icon-diagram::before{
+  background-image: url();
+}
+.icon-astronaut::before{
+  background-image: url();
 }
 /* ========== End Feature========== */
 
@@ -283,7 +305,6 @@ justify-content: center;
 .our-team-section {
   background-color: var(--light-grey-bg-color);
   text-align: center;
-  outline: 2px solid red;
   padding-top: 94px;
 }
 .our-team-title {
@@ -502,11 +523,12 @@ background-repeat: repeat;
   text-decoration: none;
   border-radius: 3px;
 }
-.button > .icon{
+.button::before {
   display: inline-flex;
   margin-right: 10px;
   width: 20px;
   height: 20px;
+  content: "";
   /*background-color: red;*/
   outline: 1px solid black;
   background-image: url(../images/main/box2.jpg);
